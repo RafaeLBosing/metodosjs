@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Metodo Length</title>
+</head>
+<body>
+
+
+<script>
+
+    let  barco = [1,2,3,10,20,30];
+    console.log(`Antes de ser adicionado : ${barco.length}`); //6
+
+    barco.push(17);
+    barco.push(40);
+
+    console.log(`Apos ser adicionado : ${barco.length}`); //6
+
+//    for(let i = 0 ; i < barco.length ; i++){
+//     console.log(`Conteudo da Array Barco Posicao: ${i} Conteudo: ${barco[i]} `)
+//    }
+
+//  array.forEach(funcao([valorAtual, índice, array]), argumentoThis)   
+
+    //barco.forEach((element, index) => {console.log('Posicao: ' + index + ' Conteudo: '+element)})
+    barco.forEach((element, index) => {console.log(`Posicao: ${index}  Conteudo: ${element}`)})
+    
+</script>
+
+</body>
+</html>

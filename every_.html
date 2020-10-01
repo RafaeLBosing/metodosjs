@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const isString = (valor) => {
+             return typeof valor === 'string';
+        }
+
+        const isA = (valor) => {
+             return valor.match('A');
+        }
+
+        let vect1 = ['A', 'A', 'A', 'A'];
+        let vect2 = ['E', 'G', 'F'];
+        let vect3 = ['1', '2', '3'];
+
+
+        console.log('Verifica String');
+        console.log(vect1.every(isString));
+        console.log(vect2.every(isString));
+        
+        console.log('Verifica Letra A');
+        console.log(vect1.every(isA));
+        console.log(vect2.every(isA));
+        console.log(vect3.every(isA));
+
+
+    </script>
+</body>
+</htm>

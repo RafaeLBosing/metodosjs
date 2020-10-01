@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Map</title>
+</head>
+<body>
+    <script>
+
+        let a1 = ['a', 'b', 'c'];
+        let a2 = a1.map((item) => {
+            return item.toUpperCase();
+            
+        });
+        a2=a2.concat("d");
+        a1.forEach(element => {console.log(`Conteudo Original: ${element}`)});
+        a2.forEach(element => {console.log(`Conteudo Alterado: ${element}`)});
+        
+    </script>
+</body>
+</html>
